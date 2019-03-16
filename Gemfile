@@ -24,6 +24,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # manually added
 gem 'bootstrap', '~> 4.3', '>= 4.3.1'
+gem "haml-rails", "~> 1.0"
+gem 'shrine', '~> 2.11'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -46,4 +48,5 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'rb-readline'
+  gem 'pry'
 end

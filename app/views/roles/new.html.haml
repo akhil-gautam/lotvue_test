@@ -1,0 +1,9 @@
+= form_for @role, html: {class: "form-inlin justify-content-center"} do|f|
+  .container.mt-10
+    .row
+      .col-sm-6.offset-sm-3.text-center
+        .form-group
+          = f.label 'Role Name'
+          = f.text_field :name, class: 'form-control'
+        .form-group
+          = f.submit 'Submit', class: 'btn btn-primary'

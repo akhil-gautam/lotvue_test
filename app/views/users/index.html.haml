@@ -1,0 +1,26 @@
+.container
+  %h2
+    Users
+
+  .create-user.mb-2
+    = link_to "Create User", new_user_path, class: 'btn btn-primary'
+
+  %table.table#user-table
+    %thead
+      %tr
+        %th
+          First Name
+        %th
+          Last Name
+        %th
+          Role
+          
+    %tbody
+      - @users.each do|user|
+        %tr
+          %td
+            = user.first_name
+          %td
+            = user.last_name
+          %td
+            = display_roles(user)

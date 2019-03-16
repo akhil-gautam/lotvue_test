@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  meta_key: 1
+  meta_value: MyString
+
+two:
+  meta_key: 1
+  meta_value: MyString
