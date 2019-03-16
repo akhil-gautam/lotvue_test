@@ -1,6 +1,8 @@
 .container
   %h2
     Roles
+  .hide-button
+    = link_to 'Create Roles', new_role_path, class: 'btn btn-info'
   %table.table#role-table
     %thead
       %tr

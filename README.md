@@ -7,3 +7,7 @@
 . Pull it to local
 . Goto to project path and run bundle install
 . Run 'rails s' to run the rails server
+
+# Paths
+. Role's List: 'appUrl/roles'
+. User's List: 'appUrl/users'
