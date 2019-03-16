@@ -1,0 +1,15 @@
+.container
+  .row.form-group
+    .col-6
+      = "Name: #{@user.first_name + @user.last_name}"
+    .col-6
+      = "Email: #{@user.email}"
+  .row.form-group
+    .col-12
+      = "Roles: #{display_roles(@user)}"
+  .row.form-group
+    .col-12
+      - @user.user_meta.each do|user_meta|
+        .row
+          .col-6
+            = "#{user_meta.meta_key} : #{user_meta.meta_value}"

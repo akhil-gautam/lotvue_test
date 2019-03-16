@@ -24,6 +24,10 @@ class UsersController < ApplicationController
             .select('users.id, users.first_name, users.last_name')
   end
 
+  def show
+    @user = User.find(params[:id])
+  end
+
   private
 
   def user_params

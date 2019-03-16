@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20190316055705) do
   end
 
   create_table "user_meta", force: :cascade do |t|
-    t.integer  "meta_key"
+    t.string   "meta_key"
     t.string   "meta_value"
     t.integer  "user_id"
     t.datetime "created_at", null: false

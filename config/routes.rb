@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     post :hide, on: :collection
   end
 
-  resources :users, only: [:new, :create, :index]
+  resources :users, only: [:new, :create, :index, :show]
 
   # if Rails.env.production?
   #   mount Shrine.presign_endpoint(:cache) => "/presign"
