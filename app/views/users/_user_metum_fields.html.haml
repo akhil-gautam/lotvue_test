@@ -1,0 +1,9 @@
+.nested-fields
+  .form-group
+    = f.label :meta_key
+    = f.text_field :meta_key
+  .form-group
+    = f.label :meta_value
+    = f.text_field :meta_value
+  .form-group
+    = link_to_remove_association "remove address", f

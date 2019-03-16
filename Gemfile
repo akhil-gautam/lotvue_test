@@ -25,7 +25,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # manually added
 gem 'bootstrap', '~> 4.3', '>= 4.3.1'
 gem "haml-rails", "~> 1.0"
-gem 'shrine', '~> 2.11'
+
+gem 'fastimage'
+gem 'image_processing'
+gem 'mini_magick'
+gem 'shrine'
+
+gem "cocoon"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
